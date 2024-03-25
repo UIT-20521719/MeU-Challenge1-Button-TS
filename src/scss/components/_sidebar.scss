@@ -1,0 +1,44 @@
+.sidebar {
+    background-color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .logo {
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+        color: #000;
+        margin: 30px 30px;
+    
+        span {
+            color: orangered !important;
+        }
+    }
+    
+    .items-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+    
+        .item {
+            margin-bottom: 30px;
+            opacity: 0.4;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.7;
+            }
+
+            &.active {
+                opacity: 1;
+            }
+            &:hover {
+                opacity: 0.9;
+            }
+        }
+    }
+
+}

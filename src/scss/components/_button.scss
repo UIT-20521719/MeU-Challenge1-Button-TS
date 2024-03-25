@@ -1,0 +1,158 @@
+.button {
+  min-width: 225px;
+  margin: 10px;
+  p {
+    font-size: 0.7rem;
+    color: #333;
+    &.hover {
+      color: #828282;
+    }
+  }
+
+  input {
+    border: 1px solid #828282;
+    border-radius: 0.3rem;
+    padding: 5px;
+    color: #828282;
+    font-size: 0.7rem;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    margin-top: 10px;
+    box-shadow: 2px 2px #3333331a;
+
+    &.fill {
+      &.default {
+        background-color: #33333333;
+        color: #3f3f3f;
+      }
+      &.primary {
+        background-color: #3d5afe;
+        color: #fff;
+      }
+
+      &.secondary {
+        background-color: #455a64;
+        color: #fff;
+      }
+      &.danger {
+        background-color: #d32f2f;
+        color: #fff;
+      }
+      &:hover,
+      &:focus,
+      &.hover {
+        filter: brightness(80%);
+      }
+    }
+
+    &.text {
+      border: none;
+      background-color: #fff;
+      box-shadow: none !important;
+
+      &.default {
+        color: #3f3f3f;
+      }
+      &.primary {
+        color: #3d5afe;
+      }
+      &.secondary {
+        color: #455a64;
+      }
+      &.danger {
+        color: #d32f2f;
+      }
+
+      &:hover,
+      &:focus,
+      &.hover {
+        background-color: rgba(41, 98, 255, 0.1);
+      }
+    }
+
+    &.outline {
+      border: 0.1px solid;
+      background-color: #fff;
+      box-shadow: none !important;
+
+      &.default {
+        color: #3f3f3f;
+        border-color: #3f3f3f;
+      }
+      &.primary {
+        color: #3d5afe;
+        border-color: #3d5afe;
+      }
+      &.secondary {
+        color: #455a64;
+        border-color: #455a64;
+      }
+      &.danger {
+        color: #d32f2f;
+        border-color: #d32f2f;
+      }
+
+      &:hover,
+      &:focus,
+      &.hover {
+        background-color: #3d5afe1a;
+      }
+    }
+
+    &.disabled {
+      opacity: 0.9;
+      &:hover {
+        cursor: not-allowed;
+        filter: brightness(100%);
+      }
+    }
+
+    &.sm {
+      padding: 0.5rem 0.8rem;
+    }
+
+    &.md {
+      padding: 0.6rem 1rem;
+    }
+
+    &.lg {
+      padding: 0.8rem 1.8rem;
+    }
+
+    &.disableShadow {
+      box-shadow: none !important;
+    }
+
+    .startIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.3rem;
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+
+    .endIcon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 0.3rem;
+      svg {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+}
